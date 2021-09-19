@@ -1,0 +1,26 @@
+{
+  "name": "desafio-2-frontend",
+  "version": "1.0.0",
+  "description": "![](https://i.imgur.com/xG74tOh.png)",
+  "main": "script.js",
+  "dependencies": {
+    "cypress": "^8.3.0",
+    "serve": "^12.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cy:open": "cypress open",
+    "start": "serve ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfpds/desafio-frontend-modulo-02-integral.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/lucasfpds/desafio-frontend-modulo-02-integral/issues"
+  },
+  "homepage": "https://github.com/lucasfpds/desafio-frontend-modulo-02-integral#readme"
+}
