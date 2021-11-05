@@ -1,3 +1,22 @@
+# Cubos Flix
+
+<p>
+Html | Css | JavaScript<br>
+O objetivo foi criar uma aplicação para um serviço de streaming (pense num Netflix).Através da aplicação ver os lançamentos mais recentes, pesquisa de filmes, sinopses e trailers. O conteúdo deste projeto abordou a propagação de eventos e alteração de propriedades com eventos através do DOM, formulários, requisições em consumo de API de forma assíncrona e, o HTML e CSS dinâmico.
+</p>
+
+[Deploy](https://cubos-flix.vercel.app/)<br>
+
+<h2>📷 Preview</h2>
+
+<img src="./desafio-front-cubos-flix.gif">
+
+
+
+
+
+
+
 ![](https://i.imgur.com/xG74tOh.png)
 
 # Desafio | Front-end - Módulo 2
