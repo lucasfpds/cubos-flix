@@ -316,7 +316,7 @@ fetch(
     }
 
     arr[1] = mes;
-    
+
     const novaData = arr.reverse().join().replaceAll(",", " de ");
 
     //TRATAMENTO DOS DADOS RESTANTES
