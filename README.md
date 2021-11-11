@@ -1,7 +1,7 @@
 # Cubos Flix
 
 <p>
-Html | Css | JavaScript<br>
+Html | Css | JavaScript<br><br>
 Aplicação para um serviço de streaming. Possui ferramentas para ver os lançamentos mais recentes, pesquisa de filmes, sinopses e trailers. O conteúdo deste projeto abordou a propagação de eventos e alteração de propriedades com eventos através do DOM, formulários, requisições em consumo de API de forma assíncrona e, o HTML e CSS dinâmico.
 </p>
 
@@ -18,16 +18,19 @@ Aplicação para um serviço de streaming. Possui ferramentas para ver os lança
 ## Passos para montar o ambiente local
 
 1. Instalar o Yarn
+
 ```sh
 npm install -g Yarn
 ```
 
 3. Instalar dependências:
+
 ```sh
 yarn install
 ```
 
 4. Start da aplicação:
+
 ```sh
 yarn start
 ```
@@ -41,13 +44,13 @@ yarn start
 Você acabou de ser contratado pela melhor empresa de tecnologia do mundo: a **CUBOS**.
 Sua primeira tarefa como desenvolvedor é criar uma aplicação para um serviço de streaming (pense num Netflix).
 
-Seu papel é construir um website com [o seguinte design](https://www.figma.com/file/AL6hZ3Lq16Uj8mw1o4BzAK/Desafio-front-academy-2?node-id=0%3A1) que permita: (funcionalidades com * ao lado são obrigatórias)
+Seu papel é construir um website com [o seguinte design](https://www.figma.com/file/AL6hZ3Lq16Uj8mw1o4BzAK/Desafio-front-academy-2?node-id=0%3A1) que permita: (funcionalidades com \* ao lado são obrigatórias)
 
-- Visualização de filmes (*)
-- Paginação de filmes (*)
-- Busca de filmes (*)
-- "Filme do dia" (*)
-- Modal de filme (*)
+- Visualização de filmes (\*)
+- Paginação de filmes (\*)
+- Busca de filmes (\*)
+- "Filme do dia" (\*)
+- Modal de filme (\*)
 - Mudança de tema
 
 Os dados do website serão requisitados da [seguinte API](https://tmdb-proxy.cubos-academy.workers.dev/3/)
@@ -66,11 +69,7 @@ Exemplo de retorno:
     {
       "adult": false,
       "backdrop_path": "https://image.tmdb.org/t/p/original/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg",
-      "genre_ids": [
-        28,
-        12,
-        14
-      ],
+      "genre_ids": [28, 12, 14],
       "id": 436969,
       "original_language": "en",
       "original_title": "The Suicide Squad",
@@ -87,12 +86,7 @@ Exemplo de retorno:
     {
       "adult": false,
       "backdrop_path": "https://image.tmdb.org/t/p/original/7WJjFviFBffEJvkAms4uWwbcVUk.jpg",
-      "genre_ids": [
-        12,
-        14,
-        35,
-        28
-      ],
+      "genre_ids": [12, 14, 35, 28],
       "id": 451048,
       "original_language": "en",
       "original_title": "Jungle Cruise",
@@ -114,6 +108,7 @@ A estrutura HTML deverá ser a seguinte:
 ![](https://i.imgur.com/s8j6m3E.png)
 
 Informações do retorno da API necessárias para o preenchimento:
+
 - background-image da `<div class="movie">` === poster_path
 - texto do `<span class="movie__title">` === title
 - texto do `<span class="movie__rating">` === vote_average
@@ -136,6 +131,7 @@ Ao voltar ou avançar uma página, os filmes em tela serão atualizados corretam
 O usuário poderá buscar um filme por meio do `<input class="input">`
 
 Quando o usuário pressionar a tecla "Enter" enquanto estiver com foco no inputm, algumas coisas teram que acontecer:
+
 - O usuário terá que ser levado para a página 0
 - Se o input possuir algum valor, você deverá realizar uma busca [no endpoint](https://tmdb-proxy.cubos-academy.workers.dev/3/search/movie?language=pt-BR&include_adult=false) passando um parametro de query "query" com o valor do input. Ex: Buscando por Matrix https://tmdb-proxy.cubos-academy.workers.dev/3/search/movie?language=pt-BR&include_adult=false&**query=Matrix**
 - Se o input não possuir valor nenhum, você deverá realizar a mesma busca que é feita para preencher os filmes iniciais (Visualização de filmes)
@@ -148,6 +144,7 @@ Assim que o website for aberto, o filme do dia deverá ser preenchido com as inf
 Exemplo de retorno:
 
 **Endpoint Geral**
+
 ```json
 {
   "adult": false,
@@ -234,7 +231,7 @@ Exemplo de retorno:
       "iso_639_1": "en",
       "name": "English"
     },
-    { 
+    {
       "english_name": "Spanish",
       "iso_639_1": "es",
       "name": "Español"
@@ -250,6 +247,7 @@ Exemplo de retorno:
 ```
 
 **Endpoint de videos**
+
 ```json
 {
   "id": 436969,
@@ -286,6 +284,7 @@ A estrutura HTML deverá ser a seguinte:
 ![](https://i.imgur.com/72ixMvR.png)
 
 Informações do retorno do **Endpoint Geral** necessárias para o preenchimento:
+
 - background-image da `<div class="highlight__video">` === backdrop_path
 - texto do `<h3 class="highlight__title">` === title
 - texto do `<span class="highlight__rating">` === vote_average
@@ -294,6 +293,7 @@ Informações do retorno do **Endpoint Geral** necessárias para o preenchimento
 - texto do `<p class="highlight__description">` === overview
 
 Informações do retorno do **Endpoint de vídeos** necessárias para o preenchimento:
+
 - href do `<a class="highlight__video-link">` === concatene a string "https://www.youtube.com/watch?v=" com o valor de **key** (como o Endpoint de vídeos retorna um array, você deverá pegar o valor de **key** do primeiro item)
 
 ### Modal de filme
@@ -409,6 +409,7 @@ A estrutura HTML deverá ser a seguinte:
 ![](https://i.imgur.com/quJYytr.png)
 
 Informações do retorno da API necessárias para o preenchimento:
+
 - texto do `<h3 class="modal__title">` === title
 - src da `<img class="modal__img">` === backdrop_path
 - texto do `<p class="modal__description">` === overview
