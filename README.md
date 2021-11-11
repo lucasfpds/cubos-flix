@@ -15,6 +15,15 @@ Aplicação para um serviço de streaming. Possui ferramentas para ver os lança
 
 - [NodeJS](https://nodejs.org/en/download/)
 
+<br>
+
+```bash
+#Fazer o fork do repositório para sua conta
+
+#Executar git clone do seu fork no terminal para clonar o repositório
+```
+<br>
+
 ## Passos para montar o ambiente local
 
 1. Instalar o Yarn
