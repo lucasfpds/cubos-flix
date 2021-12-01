@@ -5,7 +5,7 @@ Html | Css | JavaScript<br><br>
 Aplicação para um serviço de streaming. Possui ferramentas para ver os lançamentos mais recentes, pesquisa de filmes, sinopses e trailers. O conteúdo deste projeto abordou a propagação de eventos e alteração de propriedades com eventos através do DOM, formulários, requisições em consumo de API de forma assíncrona e, o HTML e CSS dinâmico.
 </p>
 
-[Deploy](https://cubos-flix.vercel.app/)<br>
+Acesse no [site](https://cubosflix.ml/)<br>
 
 <h2>📷 Preview</h2>
 
